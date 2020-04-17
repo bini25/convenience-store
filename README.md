@@ -40,9 +40,13 @@ Create a class called CashRegister that accepts an IInventory as part of its con
 
 
 1. void beginTransaction() - will setup the CashRegister to create a new transaction which means that a new customer is checking out<br>
+
 2. boolean scan(String upc) - will scan a product based on its UPC (Universal Product Code). Returns true when successful.<br>
+
 3. BigDecimal getTotal() - returns the total retail price of all goods purchased. This value is a currency.<br>
+
 4. BigDecimal pay(BigDecimal cashAmount) - mimics a customer paying for their total and returns the amount of change due to the customer. This is also the end of the transaction.<br>
+
 5. void printReceipt(OutputStream os) - prints the receipt in the following format (the format is important):<br>
 
 
