@@ -63,3 +63,18 @@ Paid: $25.00<br>
 Change: $4.00<br>
 -----------------------------<br>
 
+# Technologies
+
+Programing lanague used ------------- Java   <br />
+
+source-code editor--------------- Visual Studio Code & online java compiler   <br />
+
+version control system------------GitLab & Github desktop  <br />
+
+
+
+# Instructions on how to execute
+Solution is provided using Java programing languge.Any Java compiler should compile and run the provided codes.
+You can use any  Java editor/JRE/javaIDEs of your choice.<br />
+Just download the whole package and open with one of java's IDE like eclipse.Or download all Java classes provided and put them in one folder you should be able to excute it with no problem.<br />
+Note: use the driver class StoreApplication to test as entry point to ensure that you have a working implementation for Part 1 & 2.
