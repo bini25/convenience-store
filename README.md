@@ -67,7 +67,7 @@ Change: $4.00<br>
 
 Programing lanague used ------------- Java   <br />
 
-source-code editor--------------- Visual Studio Code & online java compiler   <br />
+source-code editor--------------- Visual Studio Code  <br />
 
 version control system------------GitLab & Github desktop  <br />
 
