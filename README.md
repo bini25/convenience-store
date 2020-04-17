@@ -11,7 +11,7 @@ The IInventory interfaces supports the following public operations:
 
 
 
-void replenish(InputStream is) - Reads the inventory from a comma separated InputStream, each line in the InputStream represents a different Product. An example input stream looks like this (the header will be part of the input stream as well):
+1. void replenish(InputStream is) - Reads the inventory from a comma separated InputStream, each line in the InputStream represents a different Product. An example input stream looks like this (the header will be part of the input stream as well):
 
 upc,name,wholesalePrice,retailPrice,quantity <br>
 A123,Apple,0.50,1.00,100<br>
@@ -39,23 +39,23 @@ Note: Pay attention to what class you'll use to represent prices and quantity...
 Create a class called CashRegister that accepts an IInventory as part of its constructor. The CashRegister will be used to calculate the total price of Product bought by a user and must therefore provide the following methods: 
 
 
-1. void beginTransaction() - will setup the CashRegister to create a new transaction which means that a new customer is checking out
-2. boolean scan(String upc) - will scan a product based on its UPC (Universal Product Code). Returns true when successful.
-3. BigDecimal getTotal() - returns the total retail price of all goods purchased. This value is a currency.
-4. BigDecimal pay(BigDecimal cashAmount) - mimics a customer paying for their total and returns the amount of change due to the customer. This is also the end of the transaction.
-5. void printReceipt(OutputStream os) - prints the receipt in the following format (the format is important):
+1. void beginTransaction() - will setup the CashRegister to create a new transaction which means that a new customer is checking out<br>
+2. boolean scan(String upc) - will scan a product based on its UPC (Universal Product Code). Returns true when successful.<br>
+3. BigDecimal getTotal() - returns the total retail price of all goods purchased. This value is a currency.<br>
+4. BigDecimal pay(BigDecimal cashAmount) - mimics a customer paying for their total and returns the amount of change due to the customer. This is also the end of the transaction.<br>
+5. void printReceipt(OutputStream os) - prints the receipt in the following format (the format is important):<br>
 
 
-BridgePhase Convenience Store
-"-----------------------------"
-Total Products Bought: 17
-
-3 Apple @ $1.00: $3.00
-2 Milk @ $4.50: $9.00
-12 Peach @ $0.75: $9.00
-"-----------------------------"
-Total: $21.00
-Paid: $25.00
-Change: $4.00
-"-----------------------------"
+BridgePhase Convenience Store  <br>
+-----------------------------<br>
+Total Products Bought: 17 <br>
+<br>
+3 Apple @ $1.00: $3.00<br>
+2 Milk @ $4.50: $9.00<br>
+12 Peach @ $0.75: $9.00<br>
+-----------------------------<br>
+Total: $21.00<br>
+Paid: $25.00<br>
+Change: $4.00<br>
+-----------------------------<br>
 
